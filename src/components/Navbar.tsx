@@ -28,15 +28,13 @@ export default function Navbar() {
         ))}
       </ul>
       {/* Right Side */}
-      <div className="flex items-center gap-3">
-        <Button
-          rightIcon={<FaArrowRight />}
-          className="border-2 border-black dark:border-white bg-transparent text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors px-5 py-2 text-base font-semibold"
-          aria-label="Start Project"
-        >
-          Start Project
-        </Button>
-        <ThemeToggle />
+      <div className="   flex items-center z-20">
+        <div className="relative -right-8 md:-right-10 w-8 h-8 flex items-center justify-center border-2 border-black rounded-full">
+          <FaArrowRight className="text-black text-lg" />
+        </div>
+        <button className="flex  items-center text-sm border border-black rounded-full px-6 md:px-10 py-3 bg-white/80 hover:bg-white focus:outline-none focus:ring-2 focus:ring-black transition-all md:ml-2">
+          <span className="text-black font-medium max-sm:ml-2  ">Start Project</span>
+        </button>
       </div>
     </nav>
   );
