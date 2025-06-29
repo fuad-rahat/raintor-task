@@ -17,8 +17,7 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
   static getDerivedStateFromError() {
     return { hasError: true };
   }
-  componentDidCatch(error: any, info: any) {
-  }
+  
   render() {
     if (this.state.hasError) {
       return this.props.fallback || <div className="text-center text-red-500 py-8">Something went wrong.</div>;
