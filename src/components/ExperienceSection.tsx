@@ -14,7 +14,7 @@ const logos = [
 export default function ExperienceSection() {
   return (
     <section
-      className="relative mx-auto min-h-screen flex flex-col justify-center items-center overflow-x-hidden"
+      className="relative mx-auto min-h-screen flex flex-col justify-center items-center"
       style={{
         backgroundImage: 'url(/vector-bg.png)',
         backgroundSize: 'cover',
@@ -32,7 +32,7 @@ export default function ExperienceSection() {
         </button>
       </div>
       {/* Main content */}
-      <div className="w-full max-w-5xl mx-auto flex flex-col items-center mt-20 md:mt-8 px-2 sm:px-4">
+      <div className="w-full max-w-5xl mx-auto flex flex-col items-center mt-8 md:mt-8 px-2 sm:px-4">
         <h2 className="font-sporting text-2xl sm:text-4xl md:text-6xl font-bold text-black text-center leading-tight mb-6">
           <span>
             I&apos;ve been <span className="inline-block align-middle bg-black text-white rounded-lg px-4 py-2 mx-2">Developing</span>
@@ -51,8 +51,7 @@ export default function ExperienceSection() {
         <div className="w-full md:w-1/4 flex flex-col items-center md:items-end justify-end pl-2 mb-8 md:mb-0">
           <span className="font-bold text-lg md:text-2xl text-black tracking-tight text-center md:text-right">PREVIOUSLY<br />WORKED ON</span>
         </div>
-        <div className="w-full md:w-4/5 flex flex-wrap gap-4 justify-center md:justify-start items-end
-          relative md:left-[15rem] md:top-[5rem] left-0 top-0">
+        <div className="w-full md:w-4/5 flex flex-wrap gap-4 justify-center md:justify-start items-end relative left-0 top-0 md:left-[15rem] md:top-[5rem]">
           {logos.map((logo) => (
             <span
               key={logo.name}

@@ -1,6 +1,4 @@
 "use client";
-import ThemeToggle from "./ThemeToggle";
-import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa";
 
 const navLinks = [
@@ -13,7 +11,6 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav className="w-full absolute flex items-center justify-between py-6 px-6 md:px-16 z-20">
-      {/* Logo */}
       <a href="#" className="font-extrabold text-2xl tracking-tight text-black dark:text-white mr-8" aria-label="DEVLOP.ME logo">
         DEVLOP.<span className="tracking-normal">ME</span>
       </a>
